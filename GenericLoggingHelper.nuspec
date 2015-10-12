@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>GenericLoggingHelper</id>
+    <version>1.0.0</version>
+    <title>GenericLoggingHelper</title>
+    <authors>Steven Swenson</authors>
+    <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl>https://github.com/ctigeek/GenericLoggingHelper</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes>First release in a nuget package.</releaseNotes>
+    <copyright>Copyright 2015 Steven Swenson</copyright>
+    <description>A simple wrapper for multiple logging libraries. USE AT YOUR OWN RISK.</description>
+    <tags>nlog log4net logging</tags>
+  </metadata>
+  <dependencies>
+    <dependency id="log4net" version="2.0.0" />
+    <dependency id="NLog" version="2.0.0" />
+  </dependencies>
+  <files>
+    <file src="Logging\*.*" target="content\Logging" />
+  </files>
+</package>
