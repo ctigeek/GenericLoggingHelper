@@ -4,7 +4,7 @@ namespace YourNamespace.Logging
 {
     internal class ConsoleLogger : ILogger
     {
-        public static ConsoleLogger Instance { get; } = new ConsoleLogger();
+        public readonly static ConsoleLogger Instance = new ConsoleLogger();
 
         private ConsoleLogger()
         {

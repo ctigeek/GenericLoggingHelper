@@ -4,11 +4,11 @@ namespace YourNamespace.Logging
 {
     internal class NlogWrapper : ILogger
     {
-        private readonly NLog.ILogger logger;
+        protected readonly NLog.Logger logger;
 
         public NlogWrapper(Type type)
         {
-            this.logger = NLog.LogManager.GetLogger(type.Name, type);
+            logger = NLog.LogManager.GetLogger(type.Name, type);
         }
 
         public bool IsDebugEnabled
@@ -43,6 +43,9 @@ namespace YourNamespace.Logging
 
         public void Debug(object message, Exception exception)
         {
+            //nlog v2 - v3
+            //logger.Debug(message.ToString(), exception);
+            //nlog v4
             logger.Debug(exception, message.ToString());
         }
 
@@ -78,6 +81,9 @@ namespace YourNamespace.Logging
 
         public void Info(object message, Exception exception)
         {
+            //nlog v2 - v3
+            //logger.Info(message.ToString(), exception);
+            //nlog v4
             logger.Info(exception, message.ToString());
         }
 
@@ -113,6 +119,9 @@ namespace YourNamespace.Logging
 
         public void Warn(object message, Exception exception)
         {
+            //nlog v2 - v3
+            //logger.Warn(message.ToString(), exception);
+            //nlog v4
             logger.Warn(exception, message.ToString());
         }
 
@@ -148,6 +157,9 @@ namespace YourNamespace.Logging
 
         public void Error(object message, Exception exception)
         {
+            //nlog v2 - v3
+            //logger.Error(message.ToString(), exception);
+            //nlog v4
             logger.Error(exception, message.ToString());
         }
 
@@ -183,6 +195,9 @@ namespace YourNamespace.Logging
 
         public void Fatal(object message, Exception exception)
         {
+            //nlog v2 - v3
+            //logger.Fatal(message.ToString(), exception);
+            //nlog v4
             logger.Fatal(exception, message.ToString());
         }
 

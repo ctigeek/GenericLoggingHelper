@@ -4,7 +4,7 @@ namespace YourNamespace.Logging
 {
     internal class NullLogger : ILogger
     {
-        public static NullLogger Instance { get; } = new NullLogger();
+        public readonly static NullLogger Instance = new NullLogger();
 
         private NullLogger()
         {
