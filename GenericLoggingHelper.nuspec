@@ -14,7 +14,7 @@
     <tags>nlog log4net logging</tags>
     <dependencies>
       <dependency id="log4net" version="2.0.0" />
-      <dependency id="NLog" version="2.0.0" />
+      <dependency id="NLog" version="4.0.0" />
     </dependencies>
   </metadata>
   <files>
