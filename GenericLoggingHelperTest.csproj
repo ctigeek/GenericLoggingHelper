@@ -55,6 +55,7 @@
     <Compile Include="Logging\ConsoleLogger.cs" />
     <Compile Include="Logging\ILogger.cs" />
     <Compile Include="Logging\Log4NetWrapper.cs" />
+    <Compile Include="Logging\LoggingVerbosity.cs" />
     <Compile Include="Logging\LogManager.cs" />
     <Compile Include="Logging\NlogWrapper.cs" />
     <Compile Include="Logging\NullLogger.cs" />
