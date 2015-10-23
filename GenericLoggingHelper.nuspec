@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>GenericLoggingHelper</id>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <title>GenericLoggingHelper</title>
     <authors>Steven Swenson</authors>
     <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
